@@ -6,72 +6,61 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My App' , style: TextStyle(color: Colors.green),),
-          backgroundColor:const Color.fromARGB(255, 7, 26, 41),
-          centerTitle: true, 
+          backgroundColor: Colors.black12,
+          title: const Text('test execise'),
+          centerTitle: true,
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    color: const Color.fromARGB(255, 22, 5, 3),
-                    height: 200,
-                    width: 200,
-                  ),
-                  Container(
-                    color: const Color.fromARGB(255, 19, 2, 37),
-                    height: 200,
-                    width: 200,
-                  ),
-                  Container(
-                    color: const Color.fromARGB(255, 203, 244, 54),
-                    height: 200,
-                    width: 200,
-                  ),
-                  Container(
-                    color: const Color.fromARGB(255, 6, 21, 41),
-                    height: 200,
-                    width: 200,
-                  ),
-                ],
+        body: Row(
+          children: [
+            Expanded(
+              child: Column(
+              children: [
+                Container(
+              height: 200,
+                
+                  color: const Color.fromARGB(255, 8, 56, 38),
+                ),
+                Container(
+                
+              height: 300,
+                
+                  color: const Color.fromARGB(255, 5, 13, 85),
+                ),
+                Container(
+          
+              height: 250,
+                  color: const Color.fromARGB(255, 31, 25, 9),
+                ),
+              ],
               ),
-              const SizedBox(height: 24),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    color: const Color.fromARGB(255, 22, 5, 3),
-                    height: 200,
-                    width: 200,
+            ),
+            Expanded(
+              child: Column(
+              children: [
+                Expanded(
+                  child: Container(
+                  height: 200,
+                    color: const Color.fromARGB(255, 236, 11, 11),
                   ),
-                  Container(
-                    color: const Color.fromARGB(255, 19, 2, 37),
-                    height: 200,
-                    width: 200,
-                  ),
-                  Container(
-                    color: const Color.fromARGB(255, 203, 244, 54),
-                    height: 200,
-                    width: 200,
-                  ),
-                  Container(
-                    color: const Color.fromARGB(255, 6, 21, 41),
-                    height: 200,
-                    width: 200,
-                  ),
-                ],
+                ),
+                Container(
+          height: 200,
+                  color: const Color.fromARGB(255, 12, 151, 36),
+                ),
+                Container(
+          height:200 ,
+                  color: const Color.fromARGB(255, 97, 72, 4),
+                ),
+              ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
