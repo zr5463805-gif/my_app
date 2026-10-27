@@ -33,7 +33,6 @@ class MyApp extends StatelessWidget {
                   color: const Color.fromARGB(255, 5, 13, 85),
                 ),
                 Container(
-          
               height: 250,
                   color: const Color.fromARGB(255, 31, 25, 9),
                 ),
