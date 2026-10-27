@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.black12,
           title: const Text('test execise'),
-          centerTitle: true,
+          centerTitle: true,    
         ),
         body: Row(
           children: [
